@@ -3,6 +3,8 @@ jdk:
 - openjdk7
 env:
   global:
+  - secure: X9dzo1MDYe523faFewtZUNXxfDGt0qxbzu1xi8YcaeVBtH+p/mKBRxBrxSqOfa9PDbQ4BLRRpV9Ul9Brg2yIrzpGap0eNWKXfRsblIXfI4xGe9nxOIQY1RlO9p/eJD9wkf79pa3zkvHwZNgfFgYrpd5tbQKT+tIpUwoPO39Z9ks=
+  - secure: gV96DkvfWIukAP9vmPQy3exX6wXzDQF5G9GV2PVP5dl8YZuowz8mmAiMu+O5QpPdLqQNMrVCGQUj8XId98izuoE4FhRQgXV11gQul31iw0P4LRjGV+ofLcbWVPaOIua9Vo5QshJ1Fn5DTfdl/o8kwFAcKEhPSLlFSKIjTSE1uHg=
 after_success:
 - python travis/m2conf.py
 - mvn deploy --settings ~/.m2/mySettings.xml
