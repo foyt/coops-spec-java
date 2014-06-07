@@ -1,0 +1,8 @@
+language: java
+jdk:
+- openjdk7
+env:
+  global:
+after_success:
+- python travis/m2conf.py
+- mvn deploy --settings ~/.m2/mySettings.xml
