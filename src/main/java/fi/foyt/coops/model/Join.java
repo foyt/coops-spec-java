@@ -9,7 +9,7 @@ public class Join {
   }
   
   public Join(String sessionId, String algorithm, Long revisionNumber, String content, String contentType, Map<String, String> properties,
-      Map<String, Map<String, String>> extensions) {
+      Map<String, Object> extensions) {
     this();
     this.sessionId = sessionId;
     this.algorithm = algorithm;
@@ -48,7 +48,7 @@ public class Join {
     return properties;
   }
 	
-	public Map<String, Map<String, String>> getExtensions() {
+	public Map<String, Object> getExtensions() {
     return extensions;
   }
 
@@ -58,5 +58,5 @@ public class Join {
 	private String content;
 	private String contentType;
 	private Map<String, String> properties;
-  private Map<String, Map<String, String>> extensions;
+  private Map<String, Object> extensions;
 }
